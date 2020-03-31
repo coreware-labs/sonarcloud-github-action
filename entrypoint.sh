@@ -18,7 +18,7 @@ if [[ -f "build.gradle" ]]; then
 fi
 
 if [[ -z "${SONARCLOUD_URL}" ]]; then
-  SONARCLOUD_URL="https://sonarcloud.io"
+  SONARCLOUD_URL="https://sonarqube.cwlabs.co/"
 fi
 
 sonar-scanner -Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} -Dsonar.host.url=${SONARCLOUD_URL}
